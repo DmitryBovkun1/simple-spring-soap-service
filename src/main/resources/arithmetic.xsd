@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://demo.com/arithmetic"
+            xmlns:tns="http://demo.com/arithmetic"
+            elementFormDefault="qualified">
+
+    <xsd:element name="ArithmeticRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="num1" type="xsd:int" />
+                <xsd:element name="num2" type="xsd:int" />
+                <xsd:element name="action" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="ArithmeticResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="result" type="xsd:int" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
